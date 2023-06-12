@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Andrew Cheung</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+	<script src="assets/js/PersonalWebsite.js"></script>
+</head>
+
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar">
+		<div class="navbar-header">
+			<a href="#myPage">Andrew Cheung</a>
+		</div>
+		<div class="navbar-right">
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#interests">INTERESTS</a></li>
+			<li><a href="#skills">SKILLS</a></li>
+			<li><a href="#projects">PROJECTS</a></li>
+		</div>
+	</nav>
+
+
+	<!-- Full-Screen Background Image Section -->
+	<section class="fullscreen-bg" id="myPage" style="background-image: url('assets/img/BackgroundPic.png')">
+		<h1>Andrew Cheung</h1>
+		<h3>PhD student in Applied Mathematics and Statistics</h1>
+	</section>
+
+	<!-- About Me -->
+	<div class="container" id="about">
+		<div class="image-container">
+			<img class="img1" src="assets/img/Andrew.png" alt="Andrew Cheung">
+		</div>
+		<div class="aboutme-container">
+			<h1>About Me</h1>
+			<p>
+				Hi! I am currently pursuing a PhD in Applied Mathematics and Statistics at Stony Brook with an interest in computational biology. I did my undergraduate studies in biological engineering at Cornell University. Upon graduation, I worked at Rockefeller University for 3 years as a research assistant where I developed vaccine candidates for the Powassan virus and tested them for safety and efficacy in a mouse model. I am interested in combining my knowledge of biology, computer science, and machine learning to increase our understanding on biological systems. Recent innovations in this field have uncovered many novelties from the large amounts of data being collected. I am excited for the many advancements coming in the near future.
+			</p>
+		</div>
+	</div>
+
+	<!-- My Interests -->
+	<div class="container2" id="interests">
+		<div class="image-container">
+			<img class="img2" src="assets/img/AndrewatBeach.png" alt="Andrew at beach">
+		</div>
+		<div class="interests-container">
+			<h1>My Interests</h1>
+			<p>
+				I grew up in New York City and love trying new things and eating good food. Some of my hobbies include playing video games, reading books, and enjoying the outdoors. My favorite show is Attack on Titan. 
+			</p>
+		</div>
+	</div>
+
+	<!-- My Skills -->
+	<div class="container" id="skills">
+		<div class="skills-container">
+			<h1>My Skills</h1>
+			<p>
+				Python, Matlab, R, HTML, JavaScript, CSS
+			</p>
+		</div>
+	</div>
+	
+
+	<!-- Projects Section -->
+	<div class="tabs" id="projects">
+		<h1>Projects</h1>
+		<br>
+		<div>
+			<button id = "first-tab", class="tablinks active" onclick="openTab(event, 'Project1')">My Papers</button>
+			<button class="tablinks" onclick="openTab(event, 'Project2')">Genome Recoding</button>
+			<button class="tablinks" onclick="openTab(event, 'Project3')">String Matching</button>
+			<button class="tablinks" onclick="openTab(event, 'Project4')">Retro-Doodle Jump game</button>
+		</div>
+	</div>
+
+	<!-- Project 1 -->
+	<div id="Project1" class="tabcontent">
+		<div class="tabcontainer">
+			<div class="text-tabcontainer">
+				<h2>Research</h2><br>
+				<p>
+					During my time at Rockefeller University, I was introduced to many interesting projects and was lucky to work with many great scientists. One project I am most proud of is my first-author paper on a potential vaccine candidate for Powassan virus. Administered in a two-dose regimen in mice, our vaccine candidate (CIGM) protected ~70% of the experimental group from death. A control group given a vaccine to a related virus (YFV-17D) all showed signs of infection with an 11% survival rate. If you are interested in reading the paper, I have linked it below.
+				</p>
+				<li>
+					<a href="https://doi.org/10.3390/vaccines11030612" target="_blank"> Powassan Virus Vaccine </a>
+				</li>
+				<p>
+					This second paper describes a study on IRF1 deficiency in two unrelated children, who have a long history with mycobacteria diseases and no history of severe viral illness. Here, we show that human IRF1 is essential for IFN-γ-dependent macrophagic immunity to mycobacteria, but redundant for IFN-α/β-dependent antiviral immunity. 
+				</p>
+				<li>
+					<a href="https://pubmed.ncbi.nlm.nih.gov/36736301/" target="_blank"> Human IRF1 governs macrophagic IFN-γ immunity to mycobacteria </a>
+				</li>	
+			</div>
+			<div class="image-tabcontainer">
+				<img class="vaccine" src="assets/img/VaccineResults.png" alt="Vaccination Results">
+			</div>
+		</div>
+	</div>
+
+	<!-- Project 2 -->
+	<div id="Project2" class="tabcontent">
+		<div class="noimagetext-tabcontainer">
+			<h2>Genome Recoding</h2><br>
+			<p>
+				My first exposure to algorithmic design applied to biology was during my time at Rockefeller University. We wanted to test if vaccine candidates could be made for a virus by increasing its susceptibility to the immune response by optimizing the virus genome. The genetic code has a unique property where the number of distinct codon triplets (64) outnumber the number of unique amino acids (22), allowing for repetitive mapping of many codons to the same amino acid. Therefore, altering the genetic nucleotide sequence without changing the protein sequence is possible. The literature suggests that viruses could be weakened by optimizing the distance between pairs of CpGs (Cs followed by Gs), with the optimal distance being 13-39 nucleotides apart.<a href="https://www.nature.com/articles/s41564-022-01223-8" target="_blank" style="text-decoration:none"><sup>1</a> The host immune response, specifically the zinc-finger antiviral (ZAP) protein, will bind to these CpG islands in the RNA and degrade them.
+			</p>
+			<br>
+			<p>
+				Viral genomes are much smaller than the human genome (I worked with the Powassan virus which is ~11 kb long). I wrote an algorithm that takes any valid genetic sequence and recodes the sequence to fit this criteria. These recoded sequences can be experimentally tested in the lab as potential vaccine candidates. 
+			</p>
+		</div>
+	</div>
+
+	<!-- Project 3 -->
+	<div id="Project3" class="tabcontent">
+		<div class="noimagetext-tabcontainer">
+			<h2>String Matching using FM-Index</h2><br>
+			<p>
+				The string-matching problem is an important class of string algorithms that is prevalently used in biology to match a genes or protein sequences. This project incoporates many useful data structures, namely, the suffix array, Burrow-Wheeler transform (BWT), and the FM index. Given a text of length n and a pattern of length m, the suffix array is created in O(nlogn) time by sorting suffixes according to the first 2**i characters (not the most optimial but is sufficient in this case). The FM index searches for a pattern match in reverse order in O(m) time, utilizing the BWT to obtain the rank of each character and find its position in the suffix array. The KMP algorithm runs in O(n) time to find all pattern matches and is used to test the FM index's accuracy and speed.
+			</p>
+		</div>
+	</div>
+
+	<!-- Project 4 -->
+	<div id="Project4" class="tabcontent">
+		<div class="tabcontainer">
+			<div class="text-tabcontainer">
+				<h2>Retro-Doodle Jump</h2><br>
+				<p>
+					This is a game I created utilizing the Tkinter and Time libraries available in Python. Here, a player plays as a character in an infinite level climber game amid enemies and power ups, with each stage becoming increasingly longer in size.
+				</p>
+				<p>
+					Here is how to play:
+				</p>
+				<li>
+					Move left and right using the arrow keys
+				</li>
+				<li>
+					Use space to jump
+				</li>
+				<li>
+					Green power ups gives increased jump size when you land on top of it
+				</li>
+				<li>
+					Only touch the red Enemy platforms from the top, otherwise you lose!
+				</li>
+				<li>
+					Reach the top black platform to win the stage
+				</li>
+			</div>
+			<div class="image-tabcontainer">
+				<img class="RDJ" src="assets/img/DoodleGame.png" alt="Picture of Game">
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Gallery Section -->
+	<section class="gallery">
+		<div class="gallery-item" style="background-image: url('assets/img/galPic1.png')"></div>
+		<div class="gallery-item" style="background-image: url('assets/img/galPic2.png')"></div>
+		<div class="gallery-item" style="background-image: url('assets/img/galPic3.png')"></div>
+		<div class="gallery-item" style="background-image: url('assets/img/galPic4.png')"></div>
+	</section>
+
+	<footer>
+		<hr>
+		<h1>Contact Me</h1>
+		<p>
+			If you'd like to get in touch, feel free to email me at andrew.cheung.2@stonybrook.edu or connect with me on <a href="https://www.linkedin.com/in/andrewcheungny" target="blank">LinkedIn</a>.
+		</p>
+	</footer>
+
+</body>
+
+
+</html>
