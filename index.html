@@ -43,7 +43,7 @@
 		<div class="aboutme-container">
 			<h1>About Me</h1>
 			<p>
-				Hi! I am currently pursuing a PhD in Applied Mathematics and Statistics at Stony Brook with an interest in computational biology. I did my undergraduate studies in biological engineering at Cornell University. Upon graduation, I worked at Rockefeller University for 3 years as a research assistant where I developed vaccine candidates for the Powassan virus and tested them for safety and efficacy in a mouse model. I am interested in combining my knowledge of biology, computer science, and machine learning to increase our understanding on biological systems. Recent innovations in this field have uncovered many novelties from the large amounts of data being collected. I am excited for the many advancements coming in the near future.
+				Hi! I am currently pursuing a PhD in Applied Mathematics and Statistics at Stony Brook with an interest in computational biology. I did my undergraduate studies in biological engineering at Cornell University. Upon graduation, I worked at Rockefeller University for 3 years as a research assistant where I engineered vaccine candidates for the Powassan virus and tested their safety and efficacy in a mouse model. After taking advanced courses in mathematics and computer science during my PhD, I became more interested in learning about efficient algorithms and web design. I have a knack for wanting to learn new things and am currently looking for opportunities in software engineering or data science.
 			</p>
 		</div>
 	</div>
@@ -54,9 +54,9 @@
 			<img class="img2" src="assets/img/AndrewatBeach.png" alt="Andrew at beach">
 		</div>
 		<div class="interests-container">
-			<h1>My Interests</h1>
+			<h1>Interests</h1>
 			<p>
-				I grew up in New York City and love trying new things and eating good food. Some of my hobbies include playing video games, reading books, and enjoying the outdoors. My favorite show is Attack on Titan. 
+				I grew up in New York City and love trying new things and eating good food. Some of my hobbies include playing video games, reading books, and enjoying the outdoors. My favorite shows include Community and Attack on Titan. 
 			</p>
 		</div>
 	</div>
@@ -64,9 +64,15 @@
 	<!-- My Skills -->
 	<div class="container" id="skills">
 		<div class="skills-container">
-			<h1>My Skills</h1>
+			<h1>Technical Skills</h1>
 			<p>
-				Python, Matlab, R, HTML, JavaScript, CSS
+				Languages: Python, Matlab, JavaScript, R, C/C++ 
+				<br>
+				Web & Database: HTML, CSS, MongoDB
+				<br>
+				Front‐End & Back‐End: React.js, Express.js, Node.js, REST API 
+				<br>
+				Dev Tools & Repository: Git, VS Code, Postman
 			</p>
 		</div>
 	</div>
@@ -77,10 +83,11 @@
 		<h1>Projects</h1>
 		<br>
 		<div>
-			<button id = "first-tab", class="tablinks active" onclick="openTab(event, 'Project1')">My Papers</button>
-			<button class="tablinks" onclick="openTab(event, 'Project2')">Genome Recoding</button>
-			<button class="tablinks" onclick="openTab(event, 'Project3')">String Matching</button>
-			<button class="tablinks" onclick="openTab(event, 'Project4')">Retro-Doodle Jump game</button>
+			<button id = "first-tab", class="tablinks active" onclick="openTab(event, 'Project1')">Publications</button>
+			<button class="tablinks" onclick="openTab(event, 'Project2')">Moments</button>
+			<button class="tablinks" onclick="openTab(event, 'Project3')">Retro-Doodle Jump game</button>
+			<button class="tablinks" onclick="openTab(event, 'Project4')">String Matching</button>
+			<button class="tablinks" onclick="openTab(event, 'Project5')">Genome Recoding</button>
 		</div>
 	</div>
 
@@ -90,7 +97,7 @@
 			<div class="text-tabcontainer">
 				<h2>Research</h2><br>
 				<p>
-					During my time at Rockefeller University, I was introduced to many interesting projects and was lucky to work with many great scientists. One project I am most proud of is my first-author paper on a potential vaccine candidate for Powassan virus. Administered in a two-dose regimen in mice, our vaccine candidate (CIGM) protected ~70% of the experimental group from death. A control group given a vaccine to a related virus (YFV-17D) all showed signs of infection with an 11% survival rate. If you are interested in reading the paper, I have linked it below.
+					During my time at Rockefeller University, I was exposed to many interesting projects and was lucky to work with many great scientists. One project I am most proud of being a part of is my first-author paper on characterizing a potential vaccine candidate for Powassan virus. Administered in a two-dose regimen in mice, our vaccine candidate (CIGM) protected ~70% of the experimental group from death. A control group given a vaccine to a related virus (YFV-17D) all showed signs of infection with an 11% survival rate. If you are interested in reading the paper, I have linked it below.
 				</p>
 				<li>
 					<a href="https://doi.org/10.3390/vaccines11030612" target="_blank"> Powassan Virus Vaccine </a>
@@ -110,30 +117,21 @@
 
 	<!-- Project 2 -->
 	<div id="Project2" class="tabcontent">
-		<div class="noimagetext-tabcontainer">
-			<h2>Genome Recoding</h2><br>
-			<p>
-				My first exposure to algorithmic design applied to biology was during my time at Rockefeller University. We wanted to test if vaccine candidates could be made for a virus by increasing its susceptibility to the immune response by optimizing the virus genome. The genetic code has a unique property where the number of distinct codon triplets (64) outnumber the number of unique amino acids (22), allowing for repetitive mapping of many codons to the same amino acid. Therefore, altering the genetic nucleotide sequence without changing the protein sequence is possible. The literature suggests that viruses could be weakened by optimizing the distance between pairs of CpGs (Cs followed by Gs), with the optimal distance being 13-39 nucleotides apart.<a href="https://www.nature.com/articles/s41564-022-01223-8" target="_blank" style="text-decoration:none"><sup>1</a> The host immune response, specifically the zinc-finger antiviral (ZAP) protein, will bind to these CpG islands in the RNA and degrade them.
-			</p>
-			<br>
-			<p>
-				Viral genomes are much smaller than the human genome (I worked with the Powassan virus which is ~11 kb long). I wrote an algorithm that takes any valid genetic sequence and recodes the sequence to fit this criteria. These recoded sequences can be experimentally tested in the lab as potential vaccine candidates. 
-			</p>
+		<div class="tabcontainer">
+			<div class="text-tabcontainer">
+				<h2>Moments</h2><br>
+				<p>
+					Moments is a social network website, built with JavaScript with React.js on the front-end and an Express.js framework on the back-end. MongoDB Atlas is used to store the collection of posts and users. Users create an account by entering an email, username, and password. On the home page, users can view and like posts made by others. Users can also write their own posts that includes a title, image, and caption. Every profile is customizable with a profile picture and bio section and can be viewed by others. 
+				</p>
+			</div>
+			<div class="image-tabcontainer">
+				<img class="RDJ" src="assets/img/DoodleGame.png" alt="Picture of Game">
+			</div>
 		</div>
 	</div>
 
 	<!-- Project 3 -->
 	<div id="Project3" class="tabcontent">
-		<div class="noimagetext-tabcontainer">
-			<h2>String Matching using FM-Index</h2><br>
-			<p>
-				The string-matching problem is an important class of string algorithms that is prevalently used in biology to match a genes or protein sequences. This project incoporates many useful data structures, namely, the suffix array, Burrow-Wheeler transform (BWT), and the FM index. Given a text of length n and a pattern of length m, the suffix array is created in O(nlogn) time by sorting suffixes according to the first 2**i characters (not the most optimial but is sufficient in this case). The FM index searches for a pattern match in reverse order in O(m) time, utilizing the BWT to obtain the rank of each character and find its position in the suffix array. The KMP algorithm runs in O(n) time to find all pattern matches and is used to test the FM index's accuracy and speed.
-			</p>
-		</div>
-	</div>
-
-	<!-- Project 4 -->
-	<div id="Project4" class="tabcontent">
 		<div class="tabcontainer">
 			<div class="text-tabcontainer">
 				<h2>Retro-Doodle Jump</h2><br>
@@ -162,6 +160,30 @@
 			<div class="image-tabcontainer">
 				<img class="RDJ" src="assets/img/DoodleGame.png" alt="Picture of Game">
 			</div>
+		</div>
+	</div>
+
+	<!-- Project 4 -->
+	<div id="Project4" class="tabcontent">
+		<div class="noimagetext-tabcontainer">
+			<h2>String Matching using FM-Index</h2><br>
+			<p>
+				The string-matching problem is an important class of string algorithms that is frequently used in bioinformatics to map sequencing reads to genes or protein sequences. This project incorporates many useful data structures, namely, the suffix array, Burrow-Wheeler transform (BWT), and the FM-index. Given a long text of length n and a short pattern of length m, the suffix array is created in O(nlogn) time by sorting suffixes according to the first 2<sup>i</sup> characters (not the most optimal algorithm but is sufficient). The FM-index searches for a pattern match in reverse order in O(m) time, utilizing the BWT to obtain the rank of each character and find its position in the suffix array. The KMP algorithm is used as a control and can find all matches of short patterns of length m in a long text of length n in O(n) time. This is used to test the FM index's accuracy and speed.
+			</p>
+		</div>
+	</div>
+
+	<!-- Project 5 -->
+	<div id="Project5" class="tabcontent">
+		<div class="noimagetext-tabcontainer">
+			<h2>Genome Recoding</h2><br>
+			<p>
+				My first real exposure to algorithmic design applied to biological research was during my time at Rockefeller University. We wanted to test if vaccine candidates could be made by increasing its susceptibility to the immune response by optimizing spacing of certain elements in the virus genome. The genetic code has a unique property where the number of distinct codon triplets (64) outnumber the number of unique amino acids (22), allowing for repetitive mapping of many codons to the same amino acid. Therefore, altering the genetic nucleotide sequence without changing the protein sequence is possible. The literature suggests that viruses can be weakened by optimizing the distance between nucleotide pairs of CpGs (Cs followed by Gs), with the optimal distance being 13-39 nucleotides apart.<a href="https://www.nature.com/articles/s41564-022-01223-8" target="_blank" style="text-decoration:none"><sup>1</a> The host immune response, specifically the zinc-finger antiviral (ZAP) protein, will bind to these CpG islands in the RNA and degrade them.
+			</p>
+			<br>
+			<p>
+				Viral genomes are much smaller than the human genome (The Powassan virus I worked with is ~11 kb long). I wrote an algorithm that takes any valid genetic sequence and recodes the sequence to fit the criteria stated above. These recoded sequences can and have been experimentally tested in the lab as potential vaccine candidates. 
+			</p>
 		</div>
 	</div>
 
