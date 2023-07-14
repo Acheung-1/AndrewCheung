@@ -125,7 +125,7 @@
 				</p>
 			</div>
 			<div class="image-tabcontainer">
-				<img class="RDJ" src="assets/img/DoodleGame.png" alt="Picture of Game">
+				<img class="RDJ" src="assets/img/Moments.png" alt="Picture of Game">
 			</div>
 		</div>
 	</div>
@@ -165,25 +165,29 @@
 
 	<!-- Project 4 -->
 	<div id="Project4" class="tabcontent">
-		<div class="noimagetext-tabcontainer">
-			<h2>String Matching using FM-Index</h2><br>
-			<p>
-				The string-matching problem is an important class of string algorithms that is frequently used in bioinformatics to map sequencing reads to genes or protein sequences. This project incorporates many useful data structures, namely, the suffix array, Burrow-Wheeler transform (BWT), and the FM-index. Given a long text of length n and a short pattern of length m, the suffix array is created in O(nlogn) time by sorting suffixes according to the first 2<sup>i</sup> characters (not the most optimal algorithm but is sufficient). The FM-index searches for a pattern match in reverse order in O(m) time, utilizing the BWT to obtain the rank of each character and find its position in the suffix array. The KMP algorithm is used as a control and can find all matches of short patterns of length m in a long text of length n in O(n) time. This is used to test the FM index's accuracy and speed.
-			</p>
+		<div class="tabcontainer">
+			<div class="noimagetext-tabcontainer">
+				<h2>String Matching using FM-Index</h2><br>
+				<p>
+					The string-matching problem is an important class of string algorithms that is frequently used in bioinformatics to map sequencing reads to genes or protein sequences. This project incorporates many useful data structures, namely, the suffix array, Burrow-Wheeler transform (BWT), and the FM-index. Given a long text of length n and a short pattern of length m, the suffix array is created in O(nlogn) time by sorting suffixes according to the first 2<sup>i</sup> characters (not the most optimal algorithm but is sufficient). The FM-index searches for a pattern match in reverse order in O(m) time, utilizing the BWT to obtain the rank of each character and find its position in the suffix array. The KMP algorithm is used as a control and can find all matches of short patterns of length m in a long text of length n in O(n) time. This is used to test the FM index's accuracy and speed.
+				</p>
+			</div>
 		</div>
 	</div>
 
 	<!-- Project 5 -->
 	<div id="Project5" class="tabcontent">
-		<div class="noimagetext-tabcontainer">
-			<h2>Genome Recoding</h2><br>
-			<p>
-				My first real exposure to algorithmic design applied to biological research was during my time at Rockefeller University. We wanted to test if vaccine candidates could be made by increasing its susceptibility to the immune response by optimizing spacing of certain elements in the virus genome. The genetic code has a unique property where the number of distinct codon triplets (64) outnumber the number of unique amino acids (22), allowing for repetitive mapping of many codons to the same amino acid. Therefore, altering the genetic nucleotide sequence without changing the protein sequence is possible. The literature suggests that viruses can be weakened by optimizing the distance between nucleotide pairs of CpGs (Cs followed by Gs), with the optimal distance being 13-39 nucleotides apart.<a href="https://www.nature.com/articles/s41564-022-01223-8" target="_blank" style="text-decoration:none"><sup>1</a> The host immune response, specifically the zinc-finger antiviral (ZAP) protein, will bind to these CpG islands in the RNA and degrade them.
-			</p>
-			<br>
-			<p>
-				Viral genomes are much smaller than the human genome (The Powassan virus I worked with is ~11 kb long). I wrote an algorithm that takes any valid genetic sequence and recodes the sequence to fit the criteria stated above. These recoded sequences can and have been experimentally tested in the lab as potential vaccine candidates. 
-			</p>
+		<div class="tabcontainer">
+			<div class="noimagetext-tabcontainer">
+				<h2>Genome Recoding</h2><br>
+				<p>
+					My first real exposure to algorithmic design applied to biological research was during my time at Rockefeller University. We wanted to test if vaccine candidates could be made by increasing its susceptibility to the immune response by optimizing spacing of certain elements in the virus genome. The genetic code has a unique property where the number of distinct codon triplets (64) outnumber the number of unique amino acids (22), allowing for repetitive mapping of many codons to the same amino acid. Therefore, altering the genetic nucleotide sequence without changing the protein sequence is possible. The literature suggests that viruses can be weakened by optimizing the distance between nucleotide pairs of CpGs (Cs followed by Gs), with the optimal distance being 13-39 nucleotides apart.<a href="https://www.nature.com/articles/s41564-022-01223-8" target="_blank" style="text-decoration:none"><sup>1</a> The host immune response, specifically the zinc-finger antiviral (ZAP) protein, will bind to these CpG islands in the RNA and degrade them.
+				</p>
+				<br>
+				<p>
+					Viral genomes are much smaller than the human genome (The Powassan virus I worked with is ~11 kb long). I wrote an algorithm that takes any valid genetic sequence and recodes the sequence to fit the criteria stated above. These recoded sequences can and have been experimentally tested in the lab as potential vaccine candidates. 
+				</p>
+			</div>
 		</div>
 	</div>
 
