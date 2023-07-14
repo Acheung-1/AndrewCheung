@@ -16,6 +16,12 @@ body {
 	scroll-behavior: smooth;
 }
 
+a:link {
+	color: blue;
+}
+a:visited {
+	color: purple
+}
 
 /* Navigation Bar */
 .navbar {
