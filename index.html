@@ -11,8 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 
 	<script src="assets/js/PersonalWebsite.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 
 <body>
 	<!-- Navigation Bar -->
@@ -28,93 +28,166 @@
 		</div>
 	</nav>
 
-
 	<!-- Full-Screen Background Image Section -->
 	<section class="fullscreen-bg" id="myPage" style="background-image: url('assets/img/BackgroundPic.png')">
 		<h1>Andrew Cheung</h1>
-		<h3>Master's student in Applied Mathematics and Statistics</h1>
+		<p>
+			<a href="https://www.linkedin.com/in/andrewcheungny" target="_blank">
+				<i class="fa-brands fa-linkedin"></i> LinkedIn
+			</a> | 
+			<a href="https://github.com/acheung-1" target="_blank">
+				<i class="fa-brands fa-github"></i> Github
+			</a> |
+			<a href="assets/AndrewCheung_Resume.pdf" target="_blank">
+				<i class="fa-solid fa-file"></i> Resume
+			</a>
+		</p>
+		
 	</section>
 
-	<!-- About Me -->
-	<div class="container" id="about">
-		<div class="image-container">
-			<img class="img1" src="assets/img/Andrew.png" alt="Andrew Cheung">
-		</div>
-		<div class="aboutme-container">
-			<h1>About Me</h1>
-			<p>
-				Hi! I am currently pursuing a Master of Applied Mathematics and Statistics at Stony Brook University with a specialization in computational biology. I did my undergraduate studies in biological engineering at Cornell University. Upon graduation, I worked at Rockefeller University for 3 years as a research assistant. I successfully engineered vaccine candidates for Powassan virus and tested their safety and efficacy in a mouse model. Working alongside innovative scientists on these scientific problems provided me with invaluable experience in teamwork and critical thinking.
-				<br>
-				<br>
-				I became very interested in learning about efficient algorithms and web design after taking advanced courses in mathematics and computer science. I am motivated to expand my current knowledge and skill set in these areas, driven by my passion for continuous learning. I am eager to leverage my diverse background to make a meaningful impact in software engineering or data science roles.
-
-				<br>
-				<a href="https://www.linkedin.com/in/andrewcheungny" target="blank">LinkedIn</a> | 
-				<a href="https://github.com/acheung-1" target="blank">Github</a> |
-				<a href="assets/AndrewCheung_Resume.pdf" target="blank">Resume</a>
-			</p>
-		</div>
-	</div>
-
-	<!-- My Interests -->
-	<div class="container2" id="interests">
-		<div class="image-container">
-			<img class="img2" src="assets/img/AndrewatBeach.png" alt="Andrew at beach">
-		</div>
-		<div class="interests-container">
-			<h1>Interests</h1>
-			<p>
-				I grew up in New York City and love trying new things and eating good food. Some of my hobbies include playing video games, reading books, and enjoying the outdoors. My favorite shows include Community and Attack on Titan. 
-			</p>
-		</div>
-	</div>
-
-	<!-- My Skills -->
-	<div class="container" id="skills">
-		<div class="skills-container">
-			<h1>Technical Skills</h1>
-			<p>
-				Languages: Python, Matlab, JavaScript, R, C/C++
-				<br>
-				Front-End & Back-End: HTML, CSS, MongoDB, React.js, Express.js, Node.js, Git, REST API
-			</p>
+	<div class="container-box">
+		<div class="container">
+			<div class="half2">
+				<h2>Education</h2>
+			</div>
+			<div class="half">
+				<div class="section">
+					<div class="item">
+						<div class="item-header">
+							<span class="title">Stony Brook University</span>
+							<span class="date">2022 - 2024</span>
+						</div>
+						Master's in Applied Mathematics and Statistics
+					</div>
+					<div class="item">
+						<div class="item-header">
+							<span class="title">Cornell University</span>
+							<span class="date">2015 - 2019</span>
+						</div>
+						Bachelor's in Biological Engineering
+					</div>
+				</div>
+			</div>
+			<div class="half2">
+				<h2>Work Experience</h2>
+			</div>
+			<div class="half">
+				<div class="section">
+					<div class="item">
+						<div class="item-header">
+							<span class="title">Epic Systems</span>
+							<span class="date">2023 - Present</span>
+						</div>
+						Technical Solutions Engineer
+					</div>
+					<div class="item">
+						<div class="item-header">
+							<span class="title">Rockefeller University</span>
+							<span class="date">2019 - 2024</span>
+						</div>
+						Research Assistant
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
 
-	<!-- Projects Section -->
-	<div class="tabs" id="projects">
-		<h1>Projects</h1>
-		<br>
-		<div>
-			<button id = "first-tab", class="tablinks active" onclick="openTab(event, 'Project1')">Publications</button>
-			<button class="tablinks" onclick="openTab(event, 'Project2')">Moments</button>
-			<button class="tablinks" onclick="openTab(event, 'Project3')">Retro-Doodle Jump game</button>
-			<button class="tablinks" onclick="openTab(event, 'Project4')">String Matching</button>
-			<button class="tablinks" onclick="openTab(event, 'Project5')">Genome Recoding</button>
+	<!-- About Me -->
+	<div class="container-box">
+		<div class="container" id="about">
+			<div class="image-container">
+				<img class="img1" src="assets/img/Andrew.png" alt="Andrew Cheung">
+			</div>
+			<div class="aboutme-container">
+				<h2>About Me</h2>
+				<p>
+					Hi! I am currently working at Epic Systems as a Technical Solutions Engineer. I am responsible for customer success under the Ambulatory Application utilized by clinics and outpatient groups. I help troubleshoot issues by identifying deficiencies, escalating issues, and implementing code fixes.
+					<br>
+					<br>
+					I am eager to leverage my diverse background in computational biology and mathematics to make meaningful impacts in software engineering or data science roles. I've taken advanced graduate class in algorithms (string matching and computational geometry) and machine learning (statistical learning and NLP).
+				</p>
+			</div>
 		</div>
 	</div>
 
+	<!-- My Interests -->
+	<div class="container-box">
+		<div class="container2" id="interests">
+			<div class="image-container">
+				<img class="img2" src="assets/img/AndrewatBeach.png" alt="Andrew at beach">
+			</div>
+			<div class="interests-container">
+				<h2>Interests</h2>
+				<p>
+					I grew up in New York City and love eating good food. Some of my hobbies include playing video games, reading books, and enjoying the outdoors. My favorite shows include Community and Attack on Titan. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- My Skills -->
+	<div class="container-box">
+		<div class="container" id="skills">
+			<div class="skills-container">
+				<h2>Technical Skills</h2>
+				<p>
+					Languages: Python, MATLAB, JavaScript, R, C/C++, SQL, MUMPS (M)
+					<br>
+					Front-End & Back-End: HTML, CSS, MongoDB, React.js, Express.js, Node.js, Git, REST API
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Publications -->
+	<div class="container-box">
+		<div class="container" id="publications">
+			<div class="publications-container">
+				<h2>Publications</h2>
+				<ul>
+					<li>
+						<strong>Cheung A</strong>, ... MacDonald, M.R., Hoffmann, H.H. (2023). 
+						Characterization of live-attenuated Powassan virus vaccine candidates identifies an efficacious prime-boost strategy for mitigating Powassan virus disease in a murine model. 
+						<em>Vaccines</em> 11(3), 612.
+					</li>
+					<li>
+						Rosain J, ... <strong>Cheung A</strong>, et al. (2023). 
+						Human IRF1 governs macrophagic IFN-γ immunity to mycobacteria. 
+						<em>Cell</em> 186(3), 621-645.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<!-- Projects Section -->
+	<div class="tabs" id="projects">
+		<h2>Projects</h2>
+		<br>
+		<div>
+			<button id = "first-tab", class="tablinks active" onclick="openTab(event, 'Project1')">Moments</button>
+			<button class="tablinks" onclick="openTab(event, 'Project2')">Mental Health ChatBot</button>
+			<button class="tablinks" onclick="openTab(event, 'Project3')">Retro-Doodle Jump Game</button>
+			<button class="tablinks" onclick="openTab(event, 'Project4')">Line Intersection Algorithm</button>
+			<button class="tablinks" onclick="openTab(event, 'Project5')">String Matching Algorithm</button>
+			<!-- <button class="tablinks" onclick="openTab(event, 'Project6')">Genome Recoding</button>
+			<button class="tablinks" onclick="openTab(event, 'Project7')">Virus Research</button> -->
+		</div>
+	</div>
 	<!-- Project 1 -->
 	<div id="Project1" class="tabcontent">
 		<div class="tabcontainer">
 			<div class="text-tabcontainer">
-				<h2>Research</h2><br>
+				<h2>Moments</h2><br>
 				<p>
-					During my time at Rockefeller University, I was exposed to many interesting projects and was lucky to work with many great scientists. One project I am most proud of being a part of is my first-author paper on characterizing a potential vaccine candidate for Powassan virus. Administered in a two-dose regimen in mice, our vaccine candidate (CIGM) protected ~70% of the experimental group from death. A control group given a vaccine to a related virus (YFV-17D) all showed signs of infection with an 11% survival rate. If you are interested in reading the paper, I have linked it below.
+					Moments is a social networking website built with React.js for the front end and Node.js with the Express.js framework for the back end. MongoDB Atlas securely stores user profiles and post data. Users can register by providing an email, username, and password. On the home page, they can view and like posts from other users. Additionally, users can create their own posts, including a title, image, and caption. Customizable profiles allow for personalization with a profile picture and bio section.
 				</p>
-				<li>
-					<a href="https://doi.org/10.3390/vaccines11030612" target="_blank"> Powassan Virus Vaccine </a>
-				</li>
-				<p>
-					This second paper describes a study on IRF1 deficiency in two unrelated children, who have a long history with mycobacteria diseases and no history of severe viral illness. Here, we show that human IRF1 is essential for IFN-γ-dependent macrophagic immunity to mycobacteria, but redundant for IFN-α/β-dependent antiviral immunity. 
-				</p>
-				<li>
-					<a href="https://pubmed.ncbi.nlm.nih.gov/36736301/" target="_blank"> Human IRF1 governs macrophagic IFN-γ immunity to mycobacteria </a>
-				</li>	
 			</div>
 			<div class="image-tabcontainer">
-				<img class="vaccine" src="assets/img/VaccineResults.png" alt="Vaccination Results">
+				<img class="RDJ" src="assets/img/Moments.png" alt="Picture of Moments">
 			</div>
 		</div>
 	</div>
@@ -122,14 +195,26 @@
 	<!-- Project 2 -->
 	<div id="Project2" class="tabcontent">
 		<div class="tabcontainer">
-			<div class="text-tabcontainer">
-				<h2>Moments</h2><br>
+			<div class="noimagetext-tabcontainer">
+				<h2>Mental Health Chatbot</h2><br>
 				<p>
-					Moments is a social network website, built with JavaScript with React.js on the front-end and Node.js with Express.js framework on the back-end. MongoDB Atlas is used for secure storage of user profiles and post data. Users register an account by providing an email, username, and password. On the home page, users can view and like posts made by other users on the platform. Users can also create their own posts that includes a title, image, and caption. Customizable profiles allow users to personalize their profiles with a profile picture and bio section. 
+					In this project, I worked with Shi Bin Lim to fine-tune the open-sourced Llama 2 Transformer model to act as a mental health assistant. Our goal was to enhance the accuracy and relevance of the model's responses in the context of mental health therapy.
+					
+					We used three datasets: <a href="https://huggingface.co/datasets/Amod/mental_health_counseling_conversations" target="_blank"> COUNSELING dataset</a> (which contains real therapist-patient responses on online platforms), <a href="https://huggingface.co/datasets/vibhorag101/phr_mental_therapy_dataset" target="_blank"> PHR dataset</a> (a synthetically generated counseling data), and data scraped from mental health-related subreddits such as r/offmychest, r/advice, r/mentalhealth, r/confessions, and r/self. 
+						
+					We train three models using different combinations of these datasets: 
+					<li>
+						1000 rows of COUNSELING dataset
+					</li>
+					<li>
+						200 rows of COUNSELING + 1000 rows of PHR dataset
+					</li>
+					<li>
+						200 rows of COUNSELING + 1000 rows of Reddit web-scraped data
+					</li>
+					<br>
+					The performance of these models, compared with the vanilla Llama2, was evaluated using the BLEU score on unseen data (the last 500 rows of the COUNSELING dataset). Our results showed an improvement in the performance of the trained models, as measured by the 4-gram BLEU score.
 				</p>
-			</div>
-			<div class="image-tabcontainer">
-				<img class="RDJ" src="assets/img/Moments.png" alt="Picture of Game">
 			</div>
 		</div>
 	</div>
@@ -140,25 +225,25 @@
 			<div class="text-tabcontainer">
 				<h2>Retro-Doodle Jump</h2><br>
 				<p>
-					This is a game I created utilizing the Tkinter and Time libraries available in Python. Here, a player plays as a character in an infinite level climber game amid enemies and power ups, with each stage becoming increasingly longer in size.
+					I developed this game using Python’s Tkinter and Time libraries. Players control a character in an infinite level-climbing adventure, with stages growing progressively longer. Each level is packed with enemies to defeat and helpful power-ups.
 				</p>
 				<p>
 					Here is how to play:
 				</p>
 				<li>
-					Move left and right using the arrow keys
+					Use arrow keys to move left and right
 				</li>
 				<li>
 					Use space to jump
 				</li>
 				<li>
-					Green power ups give increased jump size when you land on top of it
+					Reach the top black platform to win the stage
+				</li>
+				<li>
+					Green power-ups boost jump height when landed on
 				</li>
 				<li>
 					Only touch the red Enemy platforms from the top, otherwise you lose!
-				</li>
-				<li>
-					Reach the top black platform to win the stage
 				</li>
 			</div>
 			<div class="image-tabcontainer">
@@ -170,11 +255,14 @@
 	<!-- Project 4 -->
 	<div id="Project4" class="tabcontent">
 		<div class="tabcontainer">
-			<div class="noimagetext-tabcontainer">
-				<h2>String Matching using FM-Index</h2><br>
+			<div class="text-tabcontainer">
+				<h2>Bentley Ottmann</h2><br>
 				<p>
-					The string-matching problem is an important class of string algorithms that is frequently used in bioinformatics to map sequencing reads to genes or protein sequences. This project incorporates many useful data structures, namely, the suffix array, Burrow-Wheeler transform (BWT), and the FM-index. Given a long text of length n and a short pattern of length m, the suffix array is created in O(nlogn) time by sorting suffixes according to the first 2<sup>i</sup> characters (not the most optimal algorithm but is sufficient). The FM-index searches for a pattern match in reverse order in O(m) time, utilizing the BWT to obtain the rank of each character and find its position in the suffix array. The KMP algorithm is used as a control and can find all matches of short patterns of length m in a long text of length n in O(n) time. This is used to test the FM index's accuracy and speed.
+					In this project, The task involves devising and implementing a sweep algorithm to determine whether the union of a given set of line segments in a plane forms a tree. Specifically, the algorithm should determine if the arrangement of segments has a single face—the face at infinity. An approach similar to the Bentley-Ottmann sweep algorithm should work. The problem is simplified with the assumption that no 3 points are collinear and no 2 endpoints lie on a horizontal or vertical line.
 				</p>
+			</div>
+			<div class="image-tabcontainer">
+				<img class="RDJ" src="assets/img/BentleyOttmann.png" alt="Line Intersection">
 			</div>
 		</div>
 	</div>
@@ -183,17 +271,55 @@
 	<div id="Project5" class="tabcontent">
 		<div class="tabcontainer">
 			<div class="noimagetext-tabcontainer">
-				<h2>Genome Recoding</h2><br>
+				<h2>String Matching using FM-Index</h2><br>
 				<p>
-					My first real exposure to algorithmic design applied to biological research was during my time at Rockefeller University. We wanted to test if vaccine candidates could be made by increasing its susceptibility to the immune response by optimizing spacing of certain elements in the virus genome. The genetic code has a unique property where the number of distinct codon triplets (64) outnumber the number of unique amino acids (22), allowing for repetitive mapping of many codons to the same amino acid. Therefore, altering the genetic nucleotide sequence without changing the protein sequence is possible. The literature suggests that viruses can be weakened by optimizing the distance between nucleotide pairs of CpGs (Cs followed by Gs), with the optimal distance being 13-39 nucleotides apart.<a href="https://www.nature.com/articles/s41564-022-01223-8" target="_blank" style="text-decoration:none"><sup>1</a> The host immune response, specifically the zinc-finger antiviral (ZAP) protein, will bind to these CpG islands in the RNA and degrade them.
-				</p>
-				<br>
-				<p>
-					Viral genomes are much smaller than the human genome (The Powassan virus I worked with is ~11 kb long). I wrote an algorithm that takes any valid genetic sequence and recodes the sequence to fit the criteria stated above. These recoded sequences can and have been experimentally tested in the lab as potential vaccine candidates. 
+					The string-matching problem is a fundamental class of string algorithms, widely used in bioinformatics for mapping sequencing reads to genes or protein sequences. This project implements key data structures, including the suffix array, Burrows-Wheeler Transform (BWT), and FM-index.
+					<br>
+					<br>
+					Given a long text of length n and a short pattern of length m, the suffix array is constructed in O(n log n) time by sorting suffixes based on the first 2<sup>i</sup> characters (a suboptimal but sufficient approach). The FM-index enables efficient pattern searching in reverse order in O(m) time, leveraging the BWT to determine character ranks and locate positions in the suffix array.
+					<br>
+					<br>
+					As a benchmark, the Knuth-Morris-Pratt (KMP) algorithm serves as a control, identifying all occurrences of a pattern of length m within a text of length n in O(n) time. This comparison helps assess the FM-index's accuracy and efficiency.
 				</p>
 			</div>
 		</div>
 	</div>
+
+	<!-- Project 6 -->
+	<!-- <div id="Project6" class="tabcontent">
+		<div class="tabcontainer">
+			<div class="noimagetext-tabcontainer">
+				<h2>Genome Recoding</h2><br>
+				<p>
+					My first real exposure to algorithmic design in biological research came during my time at Rockefeller University. Our goal was to test whether vaccine candidates could be engineered for increased susceptibility to the immune response by optimizing the spacing of specific elements within the viral genome.
+					<br>
+					<br>
+					The genetic code has a unique property where 64 distinct codon triplets encode only 22 amino acids, allowing for synonymous substitutions that alter the nucleotide sequence without changing the resulting protein. Research suggests that weakening viruses is possible by optimizing the spacing of CpG dinucleotides (cytosine followed by guanine), with an optimal distance of 13–39 nucleotides.<a href="https://www.nature.com/articles/s41564-022-01223-8" target="_blank" style="text-decoration:none"><sup>1</a> The host immune system, particularly the zinc-finger antiviral protein (ZAP), recognizes and degrades viral RNA enriched in CpG motifs.
+					<br>
+					<br>
+					Viral genomes are much smaller than the human genome—for instance, the Powassan virus genome is only ~11 kb long. I developed an algorithm that takes any valid genetic sequence and recodes it to fit these optimization criteria. These recoded sequences have been experimentally tested in the lab as potential vaccine candidates.
+				</p>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- Project 7 -->
+	<!-- <div id="Project7" class="tabcontent">
+		<div class="tabcontainer">
+			<div class="text-tabcontainer">
+				<h2>Research</h2><br>
+				<p>
+					During my time at Rockefeller University, I had the privilge of working with Nobel Prize winner Charles M Rice, a great virologist in the field. One of my proudest accomplishments was serving as the first author on a <a href="https://doi.org/10.3390/vaccines11030612" target="_blank"> paper</a> characterizing a vaccine candidate for Powassan virus. Administered in a two-dose regimen to 4-week-old mice, our vaccine candidate (CIGM) protected ~70% protection against death. A control group given an unrelated Yellow Fever 17D vaccine (YFV-17D) showed signs of infection with only an 11% survival rate.
+				</p>
+				<p>
+					Additionally, I contributed to a <a href="https://pubmed.ncbi.nlm.nih.gov/36736301/" target="_blank"> study</a> on IRF1 deficiency in two unrelated children with a history of mycobacterial diseases and no history of severe viral illness. Our findings demonstrated that human IRF1 is essential for IFN-γ-dependent macrophagic immunity against mycobacteria, but redundant for IFN-α/β-dependent antiviral immunity.
+				</p>
+			</div>
+			<div class="image-tabcontainer">
+				<img class="vaccine" src="assets/img/VaccineResults.png" alt="Vaccination Results">
+			</div>
+		</div>
+	</div> -->
 
 
 	<!-- Gallery Section -->
@@ -208,7 +334,7 @@
 		<hr>
 		<h1>Contact Me</h1>
 		<p>
-			If you'd like to get in touch, feel free to email me at andrew.cheung.2@stonybrook.edu or connect with me on <a href="https://www.linkedin.com/in/andrewcheungny" target="blank">LinkedIn</a>.
+			If you'd like to get in touch, feel free to email me at amc2697@gmail.com or connect with me on <a href="https://www.linkedin.com/in/andrewcheungny" target="blank">LinkedIn</a>.
 		</p>
 	</footer>
 

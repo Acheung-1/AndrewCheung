@@ -2,18 +2,35 @@
 
 
 /* Entire body */
+
+
 html,
 body {
 	height: 100%;
 	margin: 0;
 	padding: 0; 
 	/* background-color: #ffe69b; */
-	background-color: #eadbb8;
+	/* background-color: #eadbb8; */
+	/* background-color: #f1f2f6; */
+	background-color: #f6f6f9;
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	scroll-behavior: smooth;
+}
+
+.half2 {
+    flex: 0;
+    padding: 20px;
+    /* border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+}
+.half {
+    flex: 1;
+    padding: 10px;
+    /* border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
 a:link {
@@ -23,7 +40,6 @@ a:visited {
 	color: purple
 }
 
-/* Navigation Bar */
 .navbar {
 	position: fixed;
 	display: flex;
@@ -32,7 +48,7 @@ a:visited {
 	top: 0;
 	width: 100%;
 	min-height: 50px;
-	background-color: #333;
+	background-color: #f6f6f9;
 	z-index: 1;
 }
   
@@ -47,44 +63,73 @@ a:visited {
 }
 
 .navbar-header a {
-	color: white;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	padding: 5px 10px;
 	font-size: 17px;
 	text-align: center;
+	font-weight: bold;
 }
   
 .navbar-right a {
-	color: white;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	padding: 5px 10px;
 	font-size: 17px;
 	text-align: center;
+	font-weight: bold;
 }
   
 .navbar-right a:hover {
-	background-color: white;
-	color: #333;
+	background-color: #aeabab;
+	color: #ffffff;
 	border-radius: 5px;
+	font-weight: bold;
 }
-  
-.active {
-	background-color: white;
-	color: #333;
-	border-radius: 5px;
-}
-
 
 /* Full screen background */
 .fullscreen-bg {
-	position: relative;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 1.5s ease-in-out forwards;
 }
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Page transition effect */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.page-transition.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
 		
 .fullscreen-bg h1 {
 	color: #ffffff;
@@ -100,6 +145,39 @@ a:visited {
 	text-align: center;
 	text-shadow: 2px 2px #000
 }
+
+.fullscreen-bg {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Ensure horizontal centering */
+    text-align: center; /* Center text inside */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 1.5s ease-in-out forwards;
+}
+
+.fullscreen-bg p {
+    text-align: center; /* Ensure links are centered */
+}
+
+/* Add spacing to links for better readability */
+.fullscreen-bg p a {
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: blue;
+}
+
+.fullscreen-bg p a i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
 
 
 /* Intro to me */
@@ -153,6 +231,34 @@ a:visited {
 	padding: 10px;
   	justify-content: center;
 }
+
+.publications-container {
+    margin-bottom: 20px;
+    text-align: left; /* Ensures text alignment is correct */
+}
+
+.publications-container h2 {
+    text-align: center;  /* Centers the heading */
+    font-weight: bold;
+}
+
+.publications-container ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px;
+}
+
+.publications-container li {
+    margin-bottom: 10px;
+}
+
+.publications-container strong {
+    font-weight: bold; /* Makes author names bold */
+}
+
+.publications-container em {
+    font-style: italic; /* Makes journal names italic */
+}
+
 
 .img1{
 	display: flex;
@@ -215,7 +321,8 @@ a:visited {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #d0b16a;
+	background-color: #5ca3eb;
+	/* background-color: #007BFF; */
 	padding: 50px 10px 10px;
 }
 
@@ -303,8 +410,10 @@ a:visited {
 .RDJ{
 	display: flex;
 	justify-content: center;
-	max-width: 350px;
-	max-height: 318px;
+	max-width: 450px;
+	max-height: 400px;
+	/* max-width: 350px;
+	max-height: 318px; */
 }
   
 @media (min-width: 1300px) {
@@ -352,6 +461,61 @@ a:visited {
 		background-position: center center;
 	}
 }
+
+/* test */
+body {
+	font-family: Arial, sans-serif;
+	/* margin: 40px; */
+	background-color: #f8f9fa;
+}
+.container-box {
+	/* max-width: 600px; */
+	/* margin: auto; */
+	background: white;
+	margin: 40px;
+	/* padding: 20px; */
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	color: #333;
+	border-bottom: 2px solid #007BFF;
+	padding-bottom: 5px;
+}
+.section {
+	margin-bottom: 20px;
+}
+.item {
+    margin: 5px 0;  /* Small default margin */
+    min-height: 20px; /* Ensures a minimum space between items */
+    /* min-width: 200px; Ensures a minimum space between items */
+    padding: 5px 0;  /* Extra padding to control spacing */
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.date {
+    font-style: italic;
+    color: #666;
+    text-align: right;
+}
+
+li {
+	margin-left: 20px;  /* Indentation amount */
+  }
+
+/* test */
 
 
 /* Footer */
