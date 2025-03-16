@@ -511,23 +511,37 @@ a:visited {
 		border-radius: 10px;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	}
+
 	.tabcontainer {
 		padding: 0px;
 		padding-left: 0%;
 		padding-right: 0%;
 		margin: 0px;
 	}
+
 	.tabcontent {
 		margin: 0px;
 		padding: 50px;
 	}
+
 	.text-tabcontainer {
 		margin: 0px;
 		padding: 0px;
 	}
+
 	.noimagetext-tabcontainer {
 		margin:  0px;
 		padding: 0px;
+	}
+
+	.moment-image{
+		max-width: 350;
+		max-height: 350px; 
+	}
+
+	.bo-image{
+		max-width: 350;
+		max-height: 400px; 
 	}
 }
 
@@ -551,21 +565,6 @@ a:visited {
 		height: 25vh;
 		background-size: cover;
 		background-position: center center;
-	}
-
-	.moment-image{
-		max-width: 300px;
-		max-height: 350px; 
-	}
-	
-	.rdj-image{
-		max-width: 350px;
-		max-height: 350px; 
-	}
-	
-	.bo-image{
-		max-width: 300px;
-		max-height: 400px; 
 	}
 }
 
