@@ -1,17 +1,13 @@
 /* style.css */
 
 
-/* Entire body */
-
+/* General styles */
 
 html,
 body {
 	height: 100%;
 	margin: 0;
 	padding: 0; 
-	/* background-color: #ffe69b; */
-	/* background-color: #eadbb8; */
-	/* background-color: #f1f2f6; */
 	background-color: #f6f6f9;
 	color: #000;
 	font-family: 'Roboto', sans-serif;
@@ -20,25 +16,21 @@ body {
 	scroll-behavior: smooth;
 }
 
-.half2 {
-    flex: 0;
-    padding: 20px;
-    /* border: 1px solid #ddd;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
-}
-.half {
-    flex: 1;
-    padding: 10px;
-    /* border: 1px solid #ddd;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+h2 {
+	color: #333;
+	border-bottom: 2px solid #007BFF;
+	padding-bottom: 5px;
 }
 
 a:link {
 	color: blue;
 }
-a:visited {
+
+/* a:visited {
 	color: purple
-}
+} */
+
+/* Navigation bar */
 
 .navbar {
 	position: fixed;
@@ -130,7 +122,21 @@ a:visited {
     pointer-events: all;
 }
 
-		
+.fullscreen-bg {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 1.5s ease-in-out forwards;
+}
+
 .fullscreen-bg h1 {
 	color: #ffffff;
 	font-size: 4rem;
@@ -140,47 +146,84 @@ a:visited {
 	text-shadow: 2px 2px #000;
 }
 
-.fullscreen-bg h3 {
-	color: #ffffff;
-	text-align: center;
-	text-shadow: 2px 2px #000
-}
-
-.fullscreen-bg {
-    position: relative;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Ensure horizontal centering */
-    text-align: center; /* Center text inside */
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeSlideIn 1.5s ease-in-out forwards;
-}
-
-.fullscreen-bg p {
-    text-align: center; /* Ensure links are centered */
-}
-
-/* Add spacing to links for better readability */
 .fullscreen-bg p a {
     margin: 0 10px;
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: blue;
+	text-align: center; 
 }
 
 .fullscreen-bg p a i {
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 5px;
 }
 
+/* Education/Work Experience */
 
+.title {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.date {
+    font-style: italic;
+    color: #666;
+    text-align: right;
+}
+
+.title-half {
+    flex: 0;
+    padding: 20px;
+}
+
+.list-half {
+    flex: 1;
+    padding: 10px;
+}
 
 /* Intro to me */
+
+.img1 {
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block;
+}
+
+.img2 {
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block;
+}
+
+.container-box {
+	background: white;
+	margin: 40px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+	margin-bottom: 20px;
+}
+
+.item {
+    margin: 5px 0;  
+    min-height: 20px;
+    padding: 5px 0;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -190,6 +233,15 @@ a:visited {
 	padding-right: 7%;
 	margin: 10px;
 }
+
+.container h1 {
+	font-size: 24;
+}
+
+.container p {
+	font-size: 16px;
+}
+
 
 .container2 {
 	display: flex;
@@ -205,15 +257,6 @@ a:visited {
   	padding: 10px;
 	text-align: left;
 }
-
-.container h1 {
-	font-size: 24;
-}
-
-.container p {
-	font-size: 16px;
-}
-
 
 .interests-container {
 	padding: 10px;
@@ -234,16 +277,16 @@ a:visited {
 
 .publications-container {
     margin-bottom: 20px;
-    text-align: left; /* Ensures text alignment is correct */
+    text-align: left; 
 }
 
 .publications-container h2 {
-    text-align: center;  /* Centers the heading */
+    text-align: center;  
     font-weight: bold;
 }
 
 .publications-container ul {
-    list-style-type: disc; /* Bullet points */
+    list-style-type: disc; 
     padding-left: 20px;
 }
 
@@ -252,11 +295,11 @@ a:visited {
 }
 
 .publications-container strong {
-    font-weight: bold; /* Makes author names bold */
+    font-weight: bold; 
 }
 
 .publications-container em {
-    font-style: italic; /* Makes journal names italic */
+    font-style: italic; 
 }
 
 
@@ -291,25 +334,21 @@ a:visited {
 
 	.aboutme-container {
 		width: 50%;
-		/* float: right; */
 		padding: 0px 50px 0px 50px;
 		margin-left: 10px;
   	}
 
 	.img1{
-		/* float: left; */
 		margin-right: auto;
 	}
 
 	.interests-container {
 		width: 30%;
-		/* float: left; */
 		padding: 0px 50px 0px 50px;
 		margin-left: 10px;
 	}
 
 	.img2{
-		/* float: right; */
 		margin-left: auto;
 	}
 }
@@ -322,7 +361,6 @@ a:visited {
 	align-items: center;
 	justify-content: center;
 	background-color: #5ca3eb;
-	/* background-color: #007BFF; */
 	padding: 50px 10px 10px;
 }
 
@@ -393,11 +431,19 @@ a:visited {
 	margin: 10px;
 }
 
+.text-tabcontainer li {
+	margin-left: 20px;  
+}
+
 .noimagetext-tabcontainer {
 	padding: 30px;
 	align-items: center;
 	margin: 10px;
 	max-width: 600px;
+}
+
+.noimagetext-tabcontainer li {
+	margin-left: 20px
 }
 
 .vaccine{
@@ -412,8 +458,6 @@ a:visited {
 	justify-content: center;
 	max-width: 450px;
 	max-height: 400px;
-	/* max-width: 350px;
-	max-height: 318px; */
 }
   
 @media (min-width: 1300px) {
@@ -434,8 +478,18 @@ a:visited {
 	}
 	
 	.RDJ{
+		/* width: 350px; 
+		height: 350px;
+		border-radius: 0%;
+		object-fit: cover; 
+		display: block; */
 		max-width: 450px;
 		max-height: 418px;
+		/* width: 450px;
+		height: 418px; 
+		border-radius: 0%;
+		object-fit: cover; 
+		object-position: center;  */
 	}
 }
 
@@ -461,62 +515,6 @@ a:visited {
 		background-position: center center;
 	}
 }
-
-/* test */
-body {
-	font-family: Arial, sans-serif;
-	/* margin: 40px; */
-	background-color: #f8f9fa;
-}
-.container-box {
-	/* max-width: 600px; */
-	/* margin: auto; */
-	background: white;
-	margin: 40px;
-	/* padding: 20px; */
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-	color: #333;
-	border-bottom: 2px solid #007BFF;
-	padding-bottom: 5px;
-}
-.section {
-	margin-bottom: 20px;
-}
-.item {
-    margin: 5px 0;  /* Small default margin */
-    min-height: 20px; /* Ensures a minimum space between items */
-    /* min-width: 200px; Ensures a minimum space between items */
-    padding: 5px 0;  /* Extra padding to control spacing */
-}
-
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.title {
-    font-weight: bold;
-    color: #007BFF;
-}
-
-.date {
-    font-style: italic;
-    color: #666;
-    text-align: right;
-}
-
-li {
-	margin-left: 20px;  /* Indentation amount */
-  }
-
-/* test */
-
 
 /* Footer */
 footer {
