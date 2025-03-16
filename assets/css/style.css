@@ -516,7 +516,6 @@ a:visited {
 .bo-image{
 	max-width: 400px;
 	max-height: 400px; 
-	object-fit: fill; 
 }
   
 @media (min-width: 1300px) {
