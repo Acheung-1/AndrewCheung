@@ -85,6 +85,26 @@ a:visited {
 	font-weight: bold;
 }
 
+@media (max-width: 600px) {
+	.navbar-header a {
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		padding: 2px 4px;
+		font-size: 14px;
+		text-align: center;
+		font-weight: bold;
+	}
+	  
+	.navbar-right a {
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		padding: 2px 4px;
+		font-size: 14px;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
 /* Full screen background */
 .fullscreen-bg {
     position: relative;
@@ -535,12 +555,12 @@ a:visited {
 	}
 
 	.moment-image{
-		max-width: 350;
+		max-width: 350px;
 		max-height: 350px; 
 	}
 
 	.bo-image{
-		max-width: 350;
+		max-width: 350px;
 		max-height: 400px; 
 	}
 }
