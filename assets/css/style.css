@@ -85,7 +85,7 @@ a:visited {
 	font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
 	.navbar-header a {
 		color: rgb(0, 0, 0);
 		text-decoration: none;
@@ -104,11 +104,11 @@ a:visited {
 		font-weight: bold;
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 400px) {
 	.navbar-header a {
 		color: rgb(0, 0, 0);
 		text-decoration: none;
-		padding: 2px 4px;
+		padding: 2px 2px;
 		font-size: 12px;
 		text-align: center;
 		font-weight: bold;
@@ -516,7 +516,6 @@ a:visited {
 .bo-image{
 	max-width: 400px;
 	max-height: 400px; 
-	border-radius: 15%;
 	object-fit: fill; 
 }
   
