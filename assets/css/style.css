@@ -308,6 +308,11 @@ a:visited {
     font-style: italic; 
 }
 
+.publications-container a {
+    color: #555; 
+	font-weight: bold;
+}
+
 @media (min-width: 1000px) {
 	.container {
 		flex-direction: row;
@@ -458,15 +463,15 @@ a:visited {
 }
 
 .moment-image{
-	width: 400px;
-	height: 350px; 
+	max-width: 400px;
+	max-height: 350px; 
 	border-radius: 5%;
 	object-fit: fill; 
 }
 
 .rdj-image{
-	width: 400px;
-	height: 350px; 
+	max-width: 400px;
+	max-height: 350px; 
 	border-radius: 15%;
 	object-fit: cover; 
 }
@@ -521,6 +526,21 @@ a:visited {
 		height: 25vh;
 		background-size: cover;
 		background-position: center center;
+	}
+
+	.moment-image{
+		width: 350px;
+		max-height: 350px; 
+	}
+	
+	.rdj-image{
+		width: 350px;
+		max-height: 350px; 
+	}
+	
+	.bo-image{
+		width: 350px;
+		max-height: 400px; 
 	}
 }
 
