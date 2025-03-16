@@ -1,5 +1,10 @@
 /* style.css */
 
+/* Debug */
+/* * {
+    outline: 1px solid red !important; 
+    margin: 5px !important; 
+} */
 
 /* General styles */
 
@@ -26,9 +31,10 @@ a:link {
 	color: blue;
 }
 
-/* a:visited {
-	color: purple
-} */
+a:visited {
+	/* color: purple; */
+	color: blue;
+}
 
 /* Navigation bar */
 
@@ -302,22 +308,6 @@ a:link {
     font-style: italic; 
 }
 
-
-.img1{
-	display: flex;
-	justify-content: center;
-	max-width: 354px;
-	max-height: 475px;
-
-}
-
-.img2{
-	display: flex;
-	justify-content: center;
-	max-width: 582px;
-	max-height: 385px;
-}
-
 @media (min-width: 1000px) {
 	.container {
 		flex-direction: row;
@@ -387,6 +377,10 @@ a:link {
 		font-size: 14px;
 		margin: 5px;
 	}
+
+	.container-box {
+		margin: 10px;
+	}
 }
   
 .tablinks:hover {
@@ -418,6 +412,16 @@ a:link {
 	padding-left: 7%;
 	padding-right: 7%;
 	margin: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+	.tabcontainer {
+		padding: 0px;
+		padding-left: 0%;
+		padding-right: 0%;
+		margin: 0px;
+	}
 }
 
 .image-tabcontainer {
@@ -436,7 +440,7 @@ a:link {
 }
 
 .noimagetext-tabcontainer {
-	padding: 30px;
+	padding: 10px;
 	align-items: center;
 	margin: 10px;
 	max-width: 600px;
@@ -453,11 +457,25 @@ a:link {
 	max-height: 318px;
 }
 
-.RDJ{
-	display: flex;
-	justify-content: center;
-	max-width: 450px;
-	max-height: 400px;
+.moment-image{
+	width: 400px;
+	height: 350px; 
+	border-radius: 5%;
+	object-fit: fill; 
+}
+
+.rdj-image{
+	width: 400px;
+	height: 350px; 
+	border-radius: 15%;
+	object-fit: cover; 
+}
+
+.bo-image{
+	width: 400px;
+	height: 400px; 
+	border-radius: 15%;
+	object-fit: fill; 
 }
   
 @media (min-width: 1300px) {
@@ -478,18 +496,8 @@ a:link {
 	}
 	
 	.RDJ{
-		/* width: 350px; 
-		height: 350px;
-		border-radius: 0%;
-		object-fit: cover; 
-		display: block; */
 		max-width: 450px;
 		max-height: 418px;
-		/* width: 450px;
-		height: 418px; 
-		border-radius: 0%;
-		object-fit: cover; 
-		object-position: center;  */
 	}
 }
 

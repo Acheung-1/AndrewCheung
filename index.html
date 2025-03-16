@@ -178,134 +178,145 @@
 		</div>
 	</div>
 	<!-- Project 1 -->
-	<div id="Project1" class="tabcontent">
-		<div class="tabcontainer">
-			<div class="text-tabcontainer">
-				<h2>Moments</h2><br>
-				<p>
-					Moments is a social networking website built with React.js for the front end and Node.js with the Express.js framework for the back end. MongoDB Atlas securely stores user profiles and post data. Users can register by providing an email, username, and password. On the home page, they can view and like posts from other users. Additionally, users can create their own posts, including a title, image, and caption. Customizable profiles allow for personalization with a profile picture and bio section.
-				</p>
-				<p>
-					<a href="https://github.com/Acheung-1/Moments" target="_blank">
-						<i class="fa-brands fa-github"></i> Github
-					</a> 
-				</p>
-			</div>
-			<div class="image-tabcontainer">
-				<img class="RDJ" src="assets/img/Moments.png" alt="Picture of Moments">
+	<div class="container-box">
+		<div id="Project1" class="tabcontent">
+			<div class="tabcontainer">
+				<div class="text-tabcontainer">
+					<h2>Moments</h2><br>
+					<p>
+						Moments is a social networking website built with React.js for the front end and Node.js with the Express.js framework for the back end. MongoDB Atlas securely stores user profiles and post data. Users can register by providing an email, username, and password. On the home page, they can view and like posts from other users. Additionally, users can create their own posts, including a title, image, and caption. Customizable profiles allow for personalization with a profile picture and bio section.
+					</p>
+					<p>
+						<a href="https://github.com/Acheung-1/Moments" target="_blank">
+							<i class="fa-brands fa-github"></i> Github
+						</a> 
+					</p>
+				</div>
+				<div class="image-tabcontainer">
+					<img class="moment-image" src="assets/img/Moments.png" alt="Picture of Moments">
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Project 2 -->
-	<div id="Project2" class="tabcontent">
-		<div class="tabcontainer">
-			<div class="noimagetext-tabcontainer">
-				<h2>Mental Health Chatbot</h2><br>
-				<p>
-					In this project, I worked with Shi Bin Lim to fine-tune the open-sourced Llama 2 Transformer model to act as a mental health assistant. Our goal was to enhance the accuracy and relevance of the model's responses in the context of mental health therapy.
-					
-					We used three datasets: <a href="https://huggingface.co/datasets/Amod/mental_health_counseling_conversations" target="_blank"> COUNSELING</a> dataset (which contains real therapist-patient responses on online platforms), <a href="https://huggingface.co/datasets/vibhorag101/phr_mental_therapy_dataset" target="_blank"> PHR</a> dataset (a synthetically generated counseling data), and data scraped from mental health-related subreddits such as r/offmychest, r/advice, r/mentalhealth, r/confessions, and r/self. 
+	<div class="container-box">
+		<div id="Project2" class="tabcontent">
+			<div class="tabcontainer">
+				<div class="noimagetext-tabcontainer">
+					<h2>Mental Health Chatbot</h2><br>
+					<p>
+						In this project, I fine-tuned the open-sourced Llama 2 Transformer model to act as a mental health assistant. Our goal was to enhance the accuracy and relevance of the model's responses in the context of mental health therapy.
 						
-					We train three models using different combinations of these datasets: 
-					<li>
-						1000 rows of COUNSELING dataset
-					</li>
-					<li>
-						200 rows of COUNSELING + 1000 rows of PHR dataset
-					</li>
-					<li>
-						200 rows of COUNSELING + 1000 rows of Reddit web-scraped data
-					</li>
-					<br>
-					The performance of these models, compared with the vanilla Llama2, was evaluated using the BLEU score on unseen data (the last 500 rows of the COUNSELING dataset). Our results showed an improvement in the performance of the trained models, as measured by the 4-gram BLEU score.
-				</p>
-				<p>
-					<a href="https://github.com/Acheung-1/Llama2MentalHealth" target="_blank">
-						<i class="fa-brands fa-github"></i> Github
-					</a> 
-				</p>
+						We used three datasets: <a href="https://huggingface.co/datasets/Amod/mental_health_counseling_conversations" target="_blank"> COUNSELING</a> dataset (which contains real therapist-patient responses on online platforms), <a href="https://huggingface.co/datasets/vibhorag101/phr_mental_therapy_dataset" target="_blank"> PHR</a> dataset (a synthetically generated counseling data), and data scraped from mental health-related subreddits such as r/offmychest, r/advice, r/mentalhealth, r/confessions, and r/self. 
+							
+						We train three models using different combinations of these datasets: 
+						<li>
+							1000 rows of COUNSELING dataset
+						</li>
+						<li>
+							200 rows of COUNSELING + 1000 rows of PHR dataset
+						</li>
+						<li>
+							200 rows of COUNSELING + 1000 rows of Reddit web-scraped data
+						</li>
+						<br>
+						The performance of these models, compared with the vanilla Llama2, was evaluated using the BLEU score on unseen data (the last 500 rows of the COUNSELING dataset). Our results showed an improvement in the performance of the trained models, as measured by the 4-gram BLEU score.
+					</p>
+					<p>
+						<a href="https://github.com/Acheung-1/Llama2MentalHealth" target="_blank">
+							<i class="fa-brands fa-github"></i> Github
+						</a> 
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
+
 	<!-- Project 3 -->
-	<div id="Project3" class="tabcontent">
-		<div class="tabcontainer">
-			<div class="text-tabcontainer">
-				<h2>Retro-Doodle Jump</h2><br>
-				<p>
-					I developed this game using Python’s Tkinter and Time libraries. Players control a character in an infinite level-climbing adventure, with stages growing progressively longer. Each level is packed with enemies to defeat and helpful power-ups.
-				</p>
-				<p>
-					Here is how to play:
-				</p>
-				<li>
-					Use arrow keys to move left and right
-				</li>
-				<li>
-					Use space to jump
-				</li>
-				<li>
-					Reach the top black platform to win the stage
-				</li>
-				<li>
-					Green power-ups boost jump height when landed on
-				</li>
-				<li>
-					Only touch the red Enemy platforms from the top, otherwise you lose!
-				</li>
-				<p>
-					<a href="https://github.com/Acheung-1/RetroDoodleJump" target="_blank">
-						<i class="fa-brands fa-github"></i> Github
-					</a> 
-				</p>
-			</div>
-			<div class="image-tabcontainer">
-				<img class="RDJ" src="assets/img/DoodleGame.png" alt="Picture of Game">
+	<div class="container-box">
+		<div id="Project3" class="tabcontent">
+			<div class="tabcontainer">
+				<div class="text-tabcontainer">
+					<h2>Retro-Doodle Jump</h2><br>
+					<p>
+						I developed this game using Python’s Tkinter and Time libraries. Players control a character in an infinite level-climbing adventure, with stages growing progressively longer. Each level is packed with enemies to defeat and helpful power-ups.
+					</p>
+					<p>
+						Here is how to play:
+					</p>
+					<li>
+						Use arrow keys to move left and right
+					</li>
+					<li>
+						Use space to jump
+					</li>
+					<li>
+						Reach the top black platform to win the stage
+					</li>
+					<li>
+						Green power-ups boost jump height when landed on
+					</li>
+					<li>
+						Only touch the red Enemy platforms from the top, otherwise you lose!
+					</li>
+					<p>
+						<a href="https://github.com/Acheung-1/RetroDoodleJump" target="_blank">
+							<i class="fa-brands fa-github"></i> Github
+						</a> 
+					</p>
+				</div>
+				<div class="image-tabcontainer">
+					<img class="rdj-image" src="assets/img/DoodleGame.png" alt="Picture of Game">
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Project 4 -->
-	<div id="Project4" class="tabcontent">
-		<div class="tabcontainer">
-			<div class="text-tabcontainer">
-				<h2>Bentley Ottmann</h2><br>
-				<p>
-					In this project, The task involves devising and implementing a sweep algorithm to determine whether the union of a given set of line segments in a plane forms a tree. Specifically, the algorithm should determine if the arrangement of segments has a single face—the face at infinity. An approach similar to the Bentley-Ottmann sweep algorithm should work. The problem is simplified with the assumption that no 3 points are collinear and no 2 endpoints lie on a horizontal or vertical line.
-				</p>
-				<p>
-					<a href="https://github.com/Acheung-1/BentleyOttmann" target="_blank">
-						<i class="fa-brands fa-github"></i> Github
-					</a> 
-				</p>
-			</div>
-			<div class="image-tabcontainer">
-				<img class="RDJ" src="assets/img/BentleyOttmann.png" alt="Line Intersection">
+	<div class="container-box">
+		<div id="Project4" class="tabcontent">
+			<div class="tabcontainer">
+				<div class="text-tabcontainer">
+					<h2>Bentley Ottmann</h2><br>
+					<p>
+						In this project, The task involves devising and implementing a sweep algorithm to determine whether the union of a given set of line segments in a plane forms a tree. Specifically, the algorithm should determine if the arrangement of segments has a single face—the face at infinity. An approach similar to the Bentley-Ottmann sweep algorithm should work. The problem is simplified with the assumption that no 3 points are collinear and no 2 endpoints lie on a horizontal or vertical line.
+					</p>
+					<p>
+						<a href="https://github.com/Acheung-1/BentleyOttmann" target="_blank">
+							<i class="fa-brands fa-github"></i> Github
+						</a> 
+					</p>
+				</div>
+				<div class="image-tabcontainer">
+					<img class="bo-image" src="assets/img/BentleyOttmann.png" alt="Line Intersection">
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Project 5 -->
-	<div id="Project5" class="tabcontent">
-		<div class="tabcontainer">
-			<div class="noimagetext-tabcontainer">
-				<h2>String Matching using FM-Index</h2><br>
-				<p>
-					The string-matching problem is a fundamental class of string algorithms, widely used in bioinformatics for mapping sequencing reads to genes or protein sequences. This project implements key data structures, including the suffix array, Burrows-Wheeler Transform (BWT), and FM-index.
-					<br>
-					<br>
-					Given a long text of length n and a short pattern of length m, the suffix array is constructed in O(n log n) time by sorting suffixes based on the first 2<sup>i</sup> characters (a suboptimal but sufficient approach). The FM-index enables efficient pattern searching in reverse order in O(m) time, leveraging the BWT to determine character ranks and locate positions in the suffix array.
-					<br>
-					<br>
-					As a benchmark, the Knuth-Morris-Pratt (KMP) algorithm serves as a control, identifying all occurrences of a pattern of length m within a text of length n in O(n) time. This comparison helps assess the FM-index's accuracy and efficiency.
-				</p>
-				<p>
-					<a href="https://github.com/Acheung-1/StringMatching" target="_blank">
-						<i class="fa-brands fa-github"></i> Github
-					</a> 
-				</p>
+	<div class="container-box">
+		<div id="Project5" class="tabcontent">
+			<div class="tabcontainer">
+				<div class="noimagetext-tabcontainer">
+					<h2>String Matching using FM-Index</h2><br>
+					<p>
+						The string-matching problem is a fundamental class of string algorithms, widely used in bioinformatics for mapping sequencing reads to genes or protein sequences. This project implements key data structures, including the suffix array, Burrows-Wheeler Transform (BWT), and FM-index.
+						<br>
+						<br>
+						Given a long text of length n and a short pattern of length m, the suffix array is constructed in O(n log n) time by sorting suffixes based on the first 2<sup>i</sup> characters (a suboptimal but sufficient approach). The FM-index enables efficient pattern searching in reverse order in O(m) time, leveraging the BWT to determine character ranks and locate positions in the suffix array.
+						<br>
+						<br>
+						As a benchmark, the Knuth-Morris-Pratt (KMP) algorithm serves as a control, identifying all occurrences of a pattern of length m within a text of length n in O(n) time. This comparison helps assess the FM-index's accuracy and efficiency.
+					</p>
+					<p>
+						<a href="https://github.com/Acheung-1/StringMatching" target="_blank">
+							<i class="fa-brands fa-github"></i> Github
+						</a> 
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
