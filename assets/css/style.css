@@ -213,6 +213,13 @@ a:visited {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.tabcontainer-box {
+	background: white;
+	margin: 40px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 .section {
 	margin-bottom: 20px;
 }
@@ -420,15 +427,6 @@ a:visited {
     justify-content: center;
 }
 
-@media (max-width: 800px) {
-	.tabcontainer {
-		padding: 0px;
-		padding-left: 0%;
-		padding-right: 0%;
-		margin: 0px;
-	}
-}
-
 .image-tabcontainer {
 	padding: 10px 10px;
 }
@@ -455,7 +453,7 @@ a:visited {
 	margin-left: 20px
 }
 
-.vaccine{
+.vaccine-image{
 	display: flex;
 	justify-content: center;
 	max-width: 350px;
@@ -477,8 +475,8 @@ a:visited {
 }
 
 .bo-image{
-	width: 400px;
-	height: 400px; 
+	max-width: 400px;
+	max-height: 400px; 
 	border-radius: 15%;
 	object-fit: fill; 
 }
@@ -506,6 +504,30 @@ a:visited {
 	}
 }
 
+@media (max-width: 800px) {
+	.tabcontainer-box {
+		margin: 10px;
+	}
+	.tabcontainer {
+		padding: 0px;
+		padding-left: 0%;
+		padding-right: 0%;
+		margin: 0px;
+	}
+	.tabcontent {
+		margin: 0px;
+		padding: 50px;
+	}
+	.text-tabcontainer {
+		margin: 0px;
+		padding: 0px;
+	}
+	.noimagetext-tabcontainer {
+		margin:  0px;
+		padding: 0px;
+	}
+}
+
 
 /* Gallery */
 .gallery {
@@ -529,17 +551,17 @@ a:visited {
 	}
 
 	.moment-image{
-		width: 350px;
+		max-width: 300px;
 		max-height: 350px; 
 	}
 	
 	.rdj-image{
-		width: 350px;
+		max-width: 350px;
 		max-height: 350px; 
 	}
 	
 	.bo-image{
-		width: 350px;
+		max-width: 300px;
 		max-height: 400px; 
 	}
 }
