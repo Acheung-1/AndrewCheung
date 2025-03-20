@@ -45,19 +45,19 @@ a:visited {
 	list-style: none;
 	top: 0;
 	width: 100%;
-	min-height: 500px;
+	min-height: 20px;
 	background-color: #f6f6f9;
 	z-index: 1;
 }
   
 .navbar-header {
-	padding: 15px;
+	padding: 10px;
 	margin-right: auto;
 }
   
 .navbar-right {
 	display: flex;
-	padding: 15px;
+	padding: 10px;
 }
 
 .navbar-header a {
@@ -94,9 +94,18 @@ a:visited {
 		font-size: 14px;
 		text-align: center;
 		font-weight: bold;
-		min-height: 40px;
+		min-height: 10px;
 		background-color: #f6f6f9;
 		z-index: 1;
+	}
+	.navbar-header {
+		padding: 5px;
+		margin-right: auto;
+	}
+	  
+	.navbar-right {
+		display: flex;
+		padding: 5px;
 	}
 	  
 	.navbar-right a {
