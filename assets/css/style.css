@@ -45,7 +45,7 @@ a:visited {
 	list-style: none;
 	top: 0;
 	width: 100%;
-	min-height: 50px;
+	min-height: 500px;
 	background-color: #f6f6f9;
 	z-index: 1;
 }
@@ -85,6 +85,7 @@ a:visited {
 	font-weight: bold;
 }
 
+/* navbar for phone */
 @media (max-width: 575px) {
 	.navbar-header a {
 		color: rgb(0, 0, 0);
@@ -93,6 +94,9 @@ a:visited {
 		font-size: 14px;
 		text-align: center;
 		font-weight: bold;
+		min-height: 40px;
+		background-color: #f6f6f9;
+		z-index: 1;
 	}
 	  
 	.navbar-right a {
