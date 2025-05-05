@@ -168,11 +168,12 @@
 		<h2>Projects</h2>
 		<br>
 		<div>
-			<button id = "first-tab", class="tablinks active" onclick="openTab(event, 'Project1')">Moments</button>
-			<button class="tablinks" onclick="openTab(event, 'Project2')">Mental Health ChatBot</button>
-			<button class="tablinks" onclick="openTab(event, 'Project3')">Retro-Doodle Jump Game</button>
-			<button class="tablinks" onclick="openTab(event, 'Project4')">Detecting Line Intersection</button>
-			<button class="tablinks" onclick="openTab(event, 'Project5')">String Matching</button>
+			<button id = "first-tab", class="tablinks active" onclick="openTab(event, 'Project1')">League of Legends Draft Generation</button>
+			<button class="tablinks" onclick="openTab(event, 'Project2')">Moments</button>
+			<button class="tablinks" onclick="openTab(event, 'Project3')">Mental Health ChatBot</button>
+			<button class="tablinks" onclick="openTab(event, 'Project4')">Retro-Doodle Jump Game</button>
+			<button class="tablinks" onclick="openTab(event, 'Project5')">Detecting Line Intersection</button>
+			<button class="tablinks" onclick="openTab(event, 'Project6')">String Matching</button>
 			<!-- <button class="tablinks" onclick="openTab(event, 'Project6')">Genome Recoding</button>
 			<button class="tablinks" onclick="openTab(event, 'Project7')">Virus Research</button> -->
 		</div>
@@ -180,6 +181,35 @@
 	<!-- Project 1 -->
 	<div class="tabcontainer-box">
 		<div id="Project1" class="tabcontent">
+			<div class="tabcontainer">
+				<div class="text-tabcontainer">
+					<h2>League of Legends Draft Generation</h2><br>
+					<p>
+						This project is a full-stack web application that uses machine learning to generate optimal League of Legends team drafts based on real match data. I used Riot's API to collect and preprocess 14,000 unique matches  from the latest 100 matches played from the top 300 Challenger players (patch 15.8). Built with Flask, the site lets users input an enemy draft, choose a region-specific model (NA, KR, EUW), and receive a recommended team composition with its predicted win probability.
+					</p>
+					<p>
+						The site integrates two machine learning models:
+					</p>
+					<ul>
+						<li><strong>Outcome Predictor:</strong> A binary classifier that estimates win probability based on team compositions.</li>
+						<li><strong>Draft Generator:</strong> A transformer model that generates team drafts countering the opponent’s composition.</li>
+					</ul>
+					<p>
+						<a href="https://github.com/Acheung-1/League-Of-Legends-Draft-Generation" target="_blank">
+							<i class="fa-brands fa-github"></i> Github
+						</a> 
+					</p>
+				</div>
+				<div class="image-tabcontainer">
+					<img class="moment-image" src="assets/img/League_Demo.gif" alt="GIF of League Draft Generator">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Project 2 -->
+	<div class="tabcontainer-box">
+		<div id="Project2" class="tabcontent">
 			<div class="tabcontainer">
 				<div class="text-tabcontainer">
 					<h2>Moments</h2><br>
@@ -199,9 +229,9 @@
 		</div>
 	</div>
 
-	<!-- Project 2 -->
+	<!-- Project 3 -->
 	<div class="tabcontainer-box">
-		<div id="Project2" class="tabcontent">
+		<div id="Project3" class="tabcontent">
 			<div class="tabcontainer">
 				<div class="noimagetext-tabcontainer">
 					<h2>Mental Health Chatbot</h2><br>
@@ -234,9 +264,9 @@
 	</div>
 
 
-	<!-- Project 3 -->
+	<!-- Project 4 -->
 	<div class="tabcontainer-box">
-		<div id="Project3" class="tabcontent">
+		<div id="Project4" class="tabcontent">
 			<div class="tabcontainer">
 				<div class="text-tabcontainer">
 					<h2>Retro-Doodle Jump</h2><br>
@@ -274,9 +304,9 @@
 		</div>
 	</div>
 
-	<!-- Project 4 -->
+	<!-- Project 5 -->
 	<div class="tabcontainer-box">
-		<div id="Project4" class="tabcontent">
+		<div id="Project5" class="tabcontent">
 			<div class="tabcontainer">
 				<div class="text-tabcontainer">
 					<h2>Bentley Ottmann</h2><br>
@@ -302,9 +332,9 @@
 		</div>
 	</div>
 
-	<!-- Project 5 -->
+	<!-- Project 6 -->
 	<div class="tabcontainer-box">
-		<div id="Project5" class="tabcontent">
+		<div id="Project6" class="tabcontent">
 			<div class="tabcontainer">
 				<div class="noimagetext-tabcontainer">
 					<h2>String Matching</h2><br>
@@ -327,8 +357,8 @@
 		</div>
 	</div>
 
-	<!-- Project 6 -->
-	<!-- <div id="Project6" class="tabcontent">
+	<!-- Project 7 -->
+	<!-- <div id="Project7" class="tabcontent">
 		<div class="tabcontainer">
 			<div class="noimagetext-tabcontainer">
 				<h2>Genome Recoding</h2><br>
@@ -345,8 +375,8 @@
 		</div>
 	</div> -->
 
-	<!-- Project 7 -->
-	<!-- <div id="Project7" class="tabcontent">
+	<!-- Project 8 -->
+	<!-- <div id="Project8" class="tabcontent">
 		<div class="tabcontainer">
 			<div class="text-tabcontainer">
 				<h2>Research</h2><br>
