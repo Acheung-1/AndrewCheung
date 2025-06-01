@@ -309,12 +309,12 @@
 		<div id="Project5" class="tabcontent">
 			<div class="tabcontainer">
 				<div class="text-tabcontainer">
-					<h2>Bentley Ottmann</h2><br>
+					<h2>Polygonal Face Detection and Graph Analysis</h2><br>
 					<p>
-						In this program I created, user-drawn line segments are analyzed to determine whether their union forms a closed face.
+						In this program I created, user-drawn line segments are analyzed to determine whether their union forms a closed face. I implemented the Bentley Ottmann Sweep Line Algorithm with a self-balancing tree structure to efficiently detect line intersections.
 						<br>
 						<br>
-						Each line segment is represented as a node within a custom-built AVL tree, designed to manage the Sweep Line Status (SLS), which maintains the segments in left-to-right order as a horizontal sweep line progresses through segments. The tree determines the placement of nodes by performing left tests, deciding whether a segment should be inserted as a left or right child. As the sweep line moves downward, segments are inserted into or removed from the BST, and intersections between adjacent segments are identified and processed. When an intersection occurs, the involved segments swap positions in the AVL tree, and potential new intersections are checked efficiently. At any moment, the event queue contains only the highest intersection that has yet to be processed.
+						Each line segment is represented as a node within a custom-built AVL tree, designed to manage the Sweep Line Status (SLS), which maintains the segments in left-to-right order as a horizontal sweep line progresses through segments. The tree determines the placement of nodes by performing left tests, deciding whether a segment should be inserted as a left or right child. As the sweep line moves downward, segments are inserted into or removed from the SBT, and intersections between adjacent segments are identified and processed. When an intersection occurs, the involved segments swap positions in the AVL tree, and potential new intersections are checked efficiently. At any moment, the event queue contains only the highest intersection that has yet to be processed.
 						<br>
 						<br>
 						Each intersection, once processed, is assigned a unique label, which is stored in the corresponding segment’s node. If two intersecting segments share the same label, it propagates through subsequent intersections along the structure. The key idea is that the topmost intersection label is passed down through all related segments. A closed face is identified when two intersecting segments already contain the same label, confirming that they have previously intersected and fully enclosed a region.
